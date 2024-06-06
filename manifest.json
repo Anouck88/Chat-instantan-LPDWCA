@@ -1,0 +1,13 @@
+{
+    "name": "Chat instantané",
+    "icons": [
+        {
+            "src": "icon/icon-512.png",
+            "type": "image/jpg",
+            "sizes": "512x512"
+
+        }
+    ],
+    "start_url": "/?source=pwa",
+    "display": "standalone"
+}

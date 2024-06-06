@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hors Ligne</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #app {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        header {
+            background-image: url('icon/icon-512.png');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            color: #fff;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        main {
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .btn-retry {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #075e54;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-retry:hover {
+            background-color: #0d823f;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Vous êtes hors ligne</h1>
+        </header>
+        <main>
+            <p>Il semble que vous n'ayez pas de connexion Internet. Veuillez vérifier votre connexion.</p>
+            <button class="btn-retry" onclick="window.location.reload();">Réessayer</button>
+        </main>
+    </div>
+</body>
+</html>
